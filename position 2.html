@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        #wrap{
+            position: relative;
+            width:300px;
+            height:300px;
+            border:1px solid #ccc;
+        }
+        .box{
+            position:absolute;
+            width:50px;
+            height:50px;
+            background:#0094ff;
+        }
+        #crad1{ top:0; left:0;}
+        #crad2{ top:0; right:0;}
+        #crad3{ bottom:0; left:0;}
+        #crad4{ bottom:0; right:0;}
+        #crad5{ top:100px; left:100px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="crad1"></div>
+        <div class="box" id="crad2"></div>
+        <div class="box" id="crad3"></div>
+        <div class="box" id="crad4"></div>
+        <div class="box" id="crad5"></div>
+    </div>
+</body>
+</html>
