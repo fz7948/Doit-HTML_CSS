@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr 3</title>
+    <style>
+        .flat {
+            background : blue;
+            color : white;
+        }
+        [class ~= "button"] {
+            border : 2px solid black;
+            box-shadow : rgba(0,0,0,4) 5px 5px;
+        }
+        ul li {
+            display : inline-block;
+
+            font-size : 15px;
+           
+            text-align : center;
+            
+        }
+        li a {
+            text-decoration: none;
+            padding : 5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+		<li><a href="#">메뉴 1</a></li>
+		<li><a href="#">메뉴 2</a></li>
+		<li><a href="#" class="button">메뉴 3</a></li>
+		<li><a href="#" class="flat button" >메뉴 4</a></li>
+	</ul>
+</body>
+</html>
