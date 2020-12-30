@@ -3,55 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout-markup</title>
+    <title>layout</title>
     <style>
-        div {
-            border : 1px solid #ccc;
+        @media screen and (mid-width:768px) and (max-width:1719px) {
+            #container {
+                width :570px;
+                margin: 50px auto;
+            }
         }
-        #container {
-            width :960px;
-            padding : 20px;
-            margin : 0 auto;
+        @media screen and (min-width:1720px) {
+            #container {
+                width:1710px;
+                margin:50px auto;
+            }
         }
-        #header {
-            padding:20px;
-            margin-bottom : 20px;
+        .card {
+            position : relative;
+            width: 550px;
+            height: 250px;
+            margin : 20px 10px;
+            border : 1px solid #0f0f0f33;
+            background-color :#ffffff;
+            float:left;
         }
-        #contents {
-            width : 620px;
-            padding : 20px;
-            float: left;
-            margin-bottom : 20px;
-        }
-        #sidebar {
-            width : 220px;
-            padding : 10px;
-            float : right;
-            margin-bottom: 20px;
-            background-color:rgb(194, 163, 163);
-        }
-        #footer {
-            clear : both;
-            padding : 20px;
+        .words {
+            position:absolute;
+            width:200px;
+            left:310px;
+            top:50px;
+            text-align:center;
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <h1>사이트 제목</h1>
+    <div class="card">
+        <img src="images/1.jpg">
+        <div class="words">
+            <h2>일 분 전만큼 먼 시간은 없다</h2>
+            <h3>-Jim Bishop</h3>
         </div>
-        <div id="sidebar">
-            <h2>사이드바</h2>
-            <p><small>모든 국민은 통신의 비밀을 침해받지 아니한다. 정부는 예산에 변경을 가할 필요가 있을 때에는 추가경정예산안을 편성하여 국회에 제출할 수 있다.</small></p>
-            </div>
-        <div id="contents">
-            <h2>본문</h2>
-            <p>모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다. 국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다.</p>
-        </div> 
-        <div id="footer">
-            <h2>푸터</h2>
-            <p>제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다. 이 헌법에 의한 최초의 대통령의 임기는 이 헌법시행일로부터 개시한다. 학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은 법률로 정한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.</p>
+    </div>
+    <div class="card">
+        <img src="images/2.jpg">
+        <div class="words">
+            <h2>웃음은 마음의 조깅이다</h2>
+            <h3>-Norman Cousins</h3>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/3.jpg">
+        <div class="words">
+            <h2>낡은 옷은 그냥 입고 새 책을 사라</h2>
+            <h3>-Austin Phelps</h3>
         </div>
     </div>
 </body>
